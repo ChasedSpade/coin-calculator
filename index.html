@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Coin Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
+    </head>
+    <body>
+        <div class="container">
+            <h3 class="text-center">Coin Calculator</h3>
+            <p class="text-center">Enter the number of corresponding coins.</p>
+            <form class="form-horizontal">
+                <fieldset>
+                    <div class="form-group">
+                        <label for="inputQ" class="col-md-2 control-label">Quarters</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputQ" onclick="calculator();return false;" value="0" placeholder="0" type="number" min="0">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputD" class="col-md-2 control-label">Dimes</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputD" onclick="calculator();return false;" value="0" placeholder="0" type="number" min="0">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputN" class="col-md-2 control-label">Nickels</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputN" onclick="calculator();return false;" value="0" placeholder="0" type="number" min="0">
+                        </div>
+                        <p id="totalCoins"></p>
+                    </div>   
+                    <div class="form-group">
+                        <label for="inputP" class="col-md-2 control-label">Pennies</label>
+                        <div class="col-md-1">
+                            <input class="form-control" id="inputP" onclick="calculator();return false;" value="0" placeholder="0" type="number" min="0">
+                        </div>
+                        <p id="coinValue"></p>                        
+                    </div>                                                         
+                    <div class="form-group">
+                        <div class="col-lg-10 col-lg-offset-2">
+                            <button type="submit" onclick="calculator();return false;" class="btn btn-primary">Submit</button>
+                            <br>
+                            <br>
+                            <small>The code for GPA Calculator is available at this <a href="https://github.com/ChasedSpade/gpa-calculator">GitHub</a> repository.</small>
+                        </div>
+                    </div>                    
+                </fieldset>
+            </form>
+        </div>
+        <script src="assets/js/calc.js"></script>
+    </body>
+</html>
